@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/main/style.css">
+</head>
+<body>
+
+    <header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg mt-4">
+            <div class="container">
+                <a class="navbar-brand" href="/main/index.html">
+                    <img src="/imgs/icons/logo.svg" alt="logo" width="100px">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/autorization/autorization.html"><img src="/imgs/icons/login.svg" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/main/index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catalog/catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about/about.html">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/delivery/delivery.html">Оплата и доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/bascet/bascet.html">Корзина</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacts/contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container cust-slider">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                     <img src="/imgs/slider1.png" class="d-block w-100" height="400" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imgs/slider1.png" class="d-block w-100" height="400" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imgs/slider1.png" class="d-block w-100" height="400" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="achivments">
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-md-3 col-sm-6">
+                <div class="achivments-card">
+                    <img src="/imgs/icons/time.svg" class="img-card" width="85px" height="75px"  alt="">
+                    <p>Более 2 лет на рынке</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="achivments-card">
+                    <img src="/imgs/icons/phone.svg" class="img-card" width="85px" height="75px"  alt="">
+                    <p>Лучшие запчасти</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="achivments-card">
+                    <img src="/imgs/icons/item.svg" class="img-card" width="85px" height="75px"  alt="">
+                    <p>100% гарантия качества</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="achivments-card">
+                    <img src="/imgs/icons/shield.svg" class="img-card" width="85px" height="75px"  alt="">
+                    <p>Выгодные цены</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="offers">
+    <div class="container">
+
+        <h2 class="text-center">Популярные товары</h2>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                        <img src="/imgs/icons/tovar.png" class="card-img-top" alt="...">
+
+                    <div class="custom-card">
+                        
+                        <h5 class="card-title">Коробрка передач</h5>
+                        <p class="card-text">30 952 ₽</p>
+
+                        <div class="counter">
+                            <button class="btn-count">-</button>
+                            <p>2</p>
+                            <button class="btn-count">+</button>
+                            <a href="/item page/item.html" class="btn btn-bascet" type="button">В корзину</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                        <img src="/imgs/icons/tovar.png" class="card-img-top" alt="...">
+
+                    <div class="custom-card">
+                        
+                        <h5 class="card-title">Коробрка передач</h5>
+                        <p class="card-text">30 952 ₽</p>
+
+                        <div class="counter">
+                            <button class="btn-count">-</button>
+                            <p>2</p>
+                            <button class="btn-count">+</button>
+                            <a href="/item page/item.html" class="btn btn-bascet" type="button">В корзину</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                        <img src="/imgs/icons/tovar.png" class="card-img-top" alt="...">
+
+                    <div class="custom-card">
+                        
+                        <h5 class="card-title">Коробрка передач</h5>
+                        <p class="card-text">30 952 ₽</p>
+
+                        <div class="counter">
+                            <button class="btn-count">-</button>
+                            <p>2</p>
+                            <button class="btn-count">+</button>
+                            <a href="/item page/item.html" class="btn btn-bascet" type="button">В корзину</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                        <img src="/imgs/icons/tovar.png" class="card-img-top" alt="...">
+
+                    <div class="custom-card">
+                        
+                        <h5 class="card-title">Коробрка передач</h5>
+                        <p class="card-text">30 952 ₽</p>
+
+                        <div class="counter">
+                            <button class="btn-count">-</button>
+                            <p>2</p>
+                            <button class="btn-count">+</button>
+                            <a href="/item page/item.html" class="btn btn-bascet" type="button">В корзину</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3 pb-3">
+            <button class="arrow">
+                <img src="/imgs/icons/arrowl.svg" alt="">
+            </button>
+            <button class="arrow">
+                <img src="/imgs/icons/arrowr.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<section class="category">
+
+    <div class="container">
+
+        <h2 class="text-center">Категории</h2>
+
+        <div class="row category-cards">
+
+            <div class="col-md-4">
+                <div class="category-card text-center">
+                    <img src="/imgs/EUauto.webp" width="100%" height="234px" alt="">
+                    <h5>Европейские</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card text-center">
+                    <img src="/imgs/Lada.jpg" width="100%" height="234px" alt="">
+                    <h5>Отечественные</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card text-center">
+                    <img src="/imgs/china 1.png" width="100%" height="234px" alt="">
+                    <h5>Азиатские</h5>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="about_us">
+
+    <div class="container">
+
+        <h2 class="text-center">Мы молодые, но очень амбициозные!</h2>
+
+        <div class="row about_us_cards">
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/key.svg" alt="">
+                        <p class="card_title align-content-center">Профессиональный сервис</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Комплексная диагностика, ремонт и обслуживание техники любой сложности.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/delivery.svg" alt="">
+                        <p class="card_title align-content-center">Быстрая доставка по всей России</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Доставим ваш заказ в любой регион точно в оговоренные сроки.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/garant.svg" alt="">
+                        <p class="card_title align-content-center">Гарантия на все предоставляемые услуги</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Мы уверены в качестве и предоставляем гарантии на запчасти и услуги.</p>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/motor.svg" alt="">
+                        <p class="card_title align-content-center">Широкий ассортимент запчастей в наличии</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Большинство популярных запчастей доступны прямо сейчас.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/pay.svg" alt="">
+                        <p class="card_title align-content-center">Гибкая система оплаты</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Поддерживаем наличный и безналичный расчет, а также современные способы.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 pt-3">
+                <div class="about_card">
+                    <div class="about_content d-flex">
+                        <img src="/imgs/icons/export.svg" alt="">
+                        <p class="card_title align-content-center">Только проверенные поставщики</p>
+                    </div>
+                    <div class="about_description">
+                        <p>Сотрудничаем только с официальными и проверенными производителями.</p>
+                    </div>
+                </div>
+            </div> 
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="container footer_elem">
+        <div class="row">
+
+            <div class="col-lg-4 left_info">
+                <a href="/main/index.html">
+                    <img src="/imgs/icons/logo.svg" alt="">
+                </a>
+                <p>Круглосуточно вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.</p>
+            </div> 
+            
+            <div class="col-lg-6 offset-lg-2 right_info">
+                <div class="row">
+  
+                    <div class="col-lg-6">
+                        <h5>Информация</h5>
+                        <ul>
+                            <li><a href="/main/index.html">Главная</a></li>
+                            <li><a href="/about/about.html">О компании</a></li>
+                            <li><a href="/contacts/contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <h5>Покупателям</h5>
+                        <ul>
+                            <li><a href="/delivery/delivery.html">Оплата и доставка</a></li>
+                            <li><a href="/bascet/bascet.html">Корзина</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

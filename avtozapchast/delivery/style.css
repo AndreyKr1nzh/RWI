@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --item_color: #2195D2;
+    --main_text_color: #1A1A1A;
+    --second_text_color: #727272;
+    --block_bg_color: #F8F8F8;
+    --second_item_color: #F0F0F0;
+    --bg_color: #ffffff;
+}
+
+    /***** Хэдэр *****/ 
+
+.nav-item a {
+    color: var(--main_text_color);
+    font-size: 16px;
+}
+
+
+/***** Блок способы оплаты *****/
+
+.paying {
+    margin-top: 100px;
+}
+
+.paying h3 {
+    margin-top: 40px;
+}
+
+.pay_block {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: var(--bg_color);
+    border: 1px solid var(--second_text_color);
+}
+
+.pay_block p {
+    color: var(--second_text_color);
+    padding-top: 15px
+}
+
+.pay_block h5 {
+    padding-top: 15px
+}
+
+.payments {
+    margin-top: 60px;
+}
+
+.payments img:hover {
+    border: 1px solid var(--second_text_color);
+}
+
+
+    /***** Блок подвал *****/
+
+.footer {
+    margin-top: 100px;
+    background-color: var(--block_bg_color);
+}
+
+.footer_elem {
+    padding-top: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--second_text_color);
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.left_info p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--second_text_color);
+}
