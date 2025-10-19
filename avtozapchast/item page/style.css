@@ -54,7 +54,8 @@ body {
 
 .btn-bascet {
     margin-left: 30px;
-    width: 150px;
+    width: 120px;
+    height: 40px;
     color: var(--bg_color);
     background-color: var(--item_color);
 }
