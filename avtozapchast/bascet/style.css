@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --item_color: #2195D2;
+    --main_text_color: #1A1A1A;
+    --second_text_color: #727272;
+    --block_bg_color: #F8F8F8;
+    --second_item_color: #F0F0F0;
+    --bg_color: #ffffff;
+}
+
+    /***** Хэдэр *****/ 
+
+.nav-item a {
+    color: var(--main_text_color);
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+    /***** Товары *****/ 
+
+.bascet {
+    margin-top: 100px;
+}
+
+.counter {
+    margin-top: 10px;
+    display: flex;
+}
+
+.counter p {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 5px;
+}
+
+.btn-count {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--second_item_color);
+}
+
+.btn-count:hover {
+    border: 1px solid var(--second_text_color);
+}
+
+.btn-count:active {
+    border: 1px solid var(--second_text_color);
+    background-color: var(--second_text_color);
+}
+
+.item {
+    gap: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.item p {
+    margin-bottom: 0px;
+    color: var(--second_text_color);
+}
+
+    /***** Оплата *****/ 
+
+.payments h2 {
+    margin-bottom: 15px;
+}
+
+.payments {
+    margin-top: 50px;
+}
+
+.payments img {
+    transition: transform 0.3s ease;
+}
+
+.payments img:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-bascet {
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 150px;
+    color: var(--bg_color);
+    background-color: var(--item_color);
+}
+
+.btn-bascet:hover {
+    border: 1px solid var(--second_text_color);
+} 
+
+    /***** Блок подвал *****/
+
+.footer {
+    margin-top: 150px;
+    background-color: var(--block_bg_color);
+}
+
+.footer_elem {
+    padding-top: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--second_text_color);
+}
+
+.footer a:hover {
+    color: var(--main_text_color);
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.left_info p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--second_text_color);
+}

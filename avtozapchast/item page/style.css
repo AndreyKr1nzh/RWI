@@ -1,0 +1,111 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --item_color: #2195D2;
+    --main_text_color: #1A1A1A;
+    --second_text_color: #727272;
+    --block_bg_color: #F8F8F8;
+    --second_item_color: #F0F0F0;
+    --bg_color: #ffffff;
+}
+
+    /***** Хэдэр *****/ 
+
+.nav-item a {
+    color: var(--main_text_color);
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+/***** Блок товара *****/   
+
+.item {
+    margin-top: 100px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.counter {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.counter p {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 5px;
+}
+
+.btn-count {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--second_item_color);
+}
+
+.btn-count:hover {
+    border: 1px solid var(--second_text_color);
+}
+
+.btn-count:active {
+    border: 1px solid var(--second_text_color);
+    background-color: var(--second_text_color);
+}
+
+.btn-bascet {
+    margin-left: 30px;
+    width: 120px;
+    height: 40px;
+    color: var(--bg_color);
+    background-color: var(--item_color);
+}
+
+.btn-bascet:hover {
+    border: 1px solid var(--second_text_color);
+}
+
+.descriptions h2 {
+    margin-bottom: 15px;
+}
+
+
+    /***** Блок подвал *****/
+
+.footer {
+    margin-top: 100px;
+    background-color: var(--block_bg_color);
+}
+
+.footer_elem {
+    padding-top: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--second_text_color);
+}
+
+.footer a:hover {
+    color: var(--main_text_color);
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.left_info p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--second_text_color);
+}
