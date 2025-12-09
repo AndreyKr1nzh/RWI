@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg_color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --item_color: #2195D2;
+    --main_text_color: #1A1A1A;
+    --second_text_color: #727272;
+    --block_bg_color: #F8F8F8;
+    --second_item_color: #F0F0F0;
+    --bg_color: #ffffff;
+}
+
+p {
+  color: #666;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid var(--main_text_color);
+  width: 400px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  color: #5E6F64;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo p {
+  color: #666;
+  font-size: 16px;
+}
+
+.input {
+  margin-bottom: 20px;
+}
+
+.input p {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.input input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid var(--second_text_color);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input input:focus {
+  border-color: var(--item_color);
+  outline: none;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  background: var(--item_color);
+  border: none;
+  border-radius: 50px;
+  color: var(--bg_color);
+}
+
+.button:hover {
+  border: 1px solid var(--main_text_color);
+}
+
+.link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+.link a {
+  color: var(--item_color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: var(--second_text_color);
+  text-decoration: underline;
+}
+
+/* Адаптивность для страниц авторизации и регистрации */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        align-items: flex-start;
+        padding-top: 60px;
+        overflow-y: auto;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px 25px !important;
+    }
+    
+    .logo h1 {
+        font-size: 28px;
+    }
+    
+    .logo p {
+        font-size: 15px;
+    }
+    
+    .input input {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+    
+    .button {
+        padding: 14px;
+        font-size: 16px;
+    }
+    
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 15px;
+        padding-top: 40px;
+        background-color: var(--bg_color);
+    }
+    
+    .container {
+        padding: 25px 20px !important;
+        border: 1px solid var(--second_item_color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .logo h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .logo p {
+        font-size: 14px;
+    }
+    
+    .input p {
+        font-size: 14px;
+        padding-left: 8px;
+        padding-bottom: 4px;
+    }
+    
+    .input input {
+        padding: 12px 16px;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    
+    .button {
+        padding: 13px;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    
+    .link {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 375px) {
+    body {
+        padding: 10px;
+        padding-top: 30px;
+    }
+    
+    .container {
+        padding: 20px 15px !important;
+    }
+    
+    .logo h1 {
+        font-size: 22px;
+    }
+    
+    .input input {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    .button {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .link {
+        font-size: 12px;
+    }
+}
+
+/* Планшеты в портретной ориентации */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    body {
+        padding: 40px;
+    }
+    
+    .container {
+        width: 450px !important;
+        padding: 35px 30px !important;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        padding: 10px;
+        align-items: center;
+        padding-top: 20px;
+    }
+    
+    .container {
+        width: 90% !important;
+        max-width: 400px;
+        padding: 20px 25px !important;
+    }
+    
+    .input {
+        margin-bottom: 15px;
+    }
+    
+    .input input {
+        padding: 10px 15px;
+    }
+    
+    .button {
+        padding: 12px;
+    }
+}

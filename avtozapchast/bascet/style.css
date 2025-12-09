@@ -1,0 +1,364 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --item_color: #2195D2;
+    --main_text_color: #1A1A1A;
+    --second_text_color: #727272;
+    --block_bg_color: #F8F8F8;
+    --second_item_color: #F0F0F0;
+    --bg_color: #ffffff;
+}
+
+    /***** Хэдэр *****/ 
+
+.nav-item a {
+    color: var(--main_text_color);
+    font-size: 16px;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+}
+
+    /***** Товары *****/ 
+
+.bascet {
+    margin-top: 100px;
+}
+
+.counter {
+    margin-top: 10px;
+    display: flex;
+}
+
+.counter p {
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 5px;
+}
+
+.btn-count {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--second_item_color);
+}
+
+.btn-count:hover {
+    border: 1px solid var(--second_text_color);
+}
+
+.btn-count:active {
+    border: 1px solid var(--second_text_color);
+    background-color: var(--second_text_color);
+}
+
+.item {
+    gap: 10px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.item p {
+    margin-bottom: 0px;
+    color: var(--second_text_color);
+}
+
+    /***** Оплата *****/ 
+
+.payments h2 {
+    margin-bottom: 15px;
+}
+
+.payments {
+    margin-top: 50px;
+}
+
+.payments img {
+    transition: transform 0.3s ease;
+}
+
+.payments img:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-bascet {
+    margin-right: 10px;
+    margin-left: 15px;
+    width: 150px;
+    color: var(--bg_color);
+    background-color: var(--item_color);
+}
+
+.btn-bascet:hover {
+    border: 1px solid var(--second_text_color);
+} 
+
+    /***** Блок подвал *****/
+
+.footer {
+    margin-top: 150px;
+    background-color: var(--block_bg_color);
+}
+
+.footer_elem {
+    padding-top: 40px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--second_text_color);
+}
+
+.footer a:hover {
+    color: var(--main_text_color);
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.left_info p {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--second_text_color);
+}
+
+
+
+/* Адаптивность для страницы корзины */
+@media (max-width: 992px) {
+    .bascet .row > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+    
+    .col-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    
+    .payments {
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /***** Общие стили *****/
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /***** Хэдэр *****/
+    .navbar-brand img {
+        width: 80px;
+    }
+    
+    /***** Корзина *****/
+    .bascet {
+        margin-top: 50px;
+    }
+    
+    .item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 15px;
+        margin-top: 15px;
+        gap: 15px !important;
+    }
+    
+    .item img {
+        width: 60px !important;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .item p {
+        font-size: 15px;
+        margin-bottom: 10px !important;
+    }
+    
+    .item p:first-of-type {
+        font-weight: 500;
+        color: var(--main_text_color) !important;
+    }
+    
+    .counter {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .counter p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .btn-count {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .btn-bascet {
+        margin-left: 10px !important;
+        margin-right: 0 !important;
+        width: 130px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    /***** Оплата *****/
+    .payments {
+        margin-top: 40px !important;
+    }
+    
+    .payments h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .payments img {
+        width: 120px !important;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .payments .text-center img {
+        margin-bottom: 10px;
+    }
+    
+    .payments .btn-bascet {
+        width: 200px;
+        margin: 20px auto 0;
+        display: block;
+    }
+    
+    /***** Блок подвал *****/
+    .footer {
+        margin-top: 80px !important;
+    }
+    
+    .footer_elem {
+        padding-top: 30px;
+    }
+    
+    .left_info {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .right_info .row > div {
+        margin-bottom: 20px;
+    }
+    
+    .footer h5 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    /***** Хэдэр *****/
+    .navbar-nav {
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .nav-item {
+        padding: 5px 0;
+    }
+    
+    /***** Корзина *****/
+    .item {
+        text-align: center;
+        align-items: center !important;
+    }
+    
+    .item img {
+        margin: 0 auto 15px;
+    }
+    
+    .counter {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .counter > * {
+        margin-bottom: 5px;
+    }
+    
+    .btn-bascet {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        width: 180px;
+    }
+    
+    /***** Оплата *****/
+    .payments h2 {
+        font-size: 20px;
+    }
+    
+    .payments img {
+        width: 100px !important;
+        max-width: 45%;
+    }
+    
+    .payments .btn-bascet {
+        width: 180px;
+        font-size: 14px;
+    }
+    
+    /***** Футер *****/
+    .right_info .row {
+        text-align: center;
+    }
+    
+    .footer ul li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 375px) {
+    .item {
+        padding: 12px;
+    }
+    
+    .item p {
+        font-size: 14px;
+    }
+    
+    .btn-bascet {
+        width: 160px;
+        font-size: 13px;
+    }
+    
+    .payments h2 {
+        font-size: 18px;
+    }
+    
+    .payments img {
+        width: 90px !important;
+    }
+    
+    .payments .btn-bascet {
+        width: 160px;
+    }
+}
